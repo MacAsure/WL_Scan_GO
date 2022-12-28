@@ -1,4 +1,4 @@
-# Weblogic_Scan_GO
+# WL_Scan_GO
 
 ----
 weblogic漏洞检测工具!!!
