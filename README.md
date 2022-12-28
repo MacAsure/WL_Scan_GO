@@ -54,6 +54,7 @@ git clone https://github.com/iceberg-N/Weblogic_Scan_GO.git
 ![WL_Scan_GO-3.png](./images/3.png)
 
 **域名解析**
+
 将域名解析为ip进行扫描
 ```
 ./WL_Scan_GO -u http://example.com -d
