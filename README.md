@@ -40,48 +40,38 @@ git clone https://github.com/iceberg-N/thinkphp5.x_Scan.git
 ## 使用方法
 ***
 -h 提供命令帮助文档
-![ThinkPHP5.x_Scan-1.png](./images/ThinkPHP5.x_Scan-1.png)
+![WL_Scan_GO-1.png](./images/1.png)
 
 **单个目标**   
 只有域名，默认为http
 ```
-python3 ThinkPHP5_X_Scan.py -u http://example.com
+./WL_Scan_GO -u http://example.com
 ```
 
-![ThinkPHP5.x_Scan-2.png](./images/ThinkPHP5.x_Scan-2.png)
+![WL_Scan_GO-2.png](./images/2.png)
 
-**漏洞利用**
+![WL_Scan_GO-3.png](./images/3.png)
 
+**域名解析**
+将域名解析为ip进行扫描
 ```
-python3 ThinkPHP5_X_Scan.py -u http://example.com -c whoami
+./WL_Scan_GO -u http://example.com -d
 ```
-
-![ThinkPHP5.x_Scan-3.png](./images/ThinkPHP5.x_Scan-3.png)
-
-![./images/ThinkPHP5.x_Scan-4.png](./images/ThinkPHP5.x_Scan-4.png)
-
-**上传webshell**   
-支持一句话木马，webshell名为"iceberg.php"，密码为"iceberg"
-```
-python3 ThinkPHP5_X_Scan.py -w http://example.com
-```
-
-![ThinkPHP5.x_Scan-5.png](./images/ThinkPHP5.x_Scan-5.png)
-
-![ThinkPHP5.x_Scan-6.png](./images/ThinkPHP5.x_Scan-6.png)
 
 **批量检测**   
-支持txt格式
+批量自动域名解析
+支持txt格式,如果没指定输出路径，默认在工具当前目录下生成result.txt
 ```
-python3 ThinkPHP5_X_Scan.py -f ./ip.txt -o ./result.txt
+./WL_Scan_GO -f ./123.txt
+./WL_Scan_GO -f ./123.txt -o ./result.txt
 ```
 
-![ThinkPHP5.x_Scan-1.png](./images/ThinkPHP5.x_Scan-7.png)
+![WL_Scan_GO-4.png](./images/4.png)
 
-![ThinkPHP5.x_Scan-8.png](./images/ThinkPHP5.x_Scan-8.png)
+![WL_Scan_GO-5.png](./images/5.png)
 
 
 # 更多
 ***
-thinkphp5.x的各种版本的漏洞原理及代码分析，请搜索微信公众号"MrHatSec"。   
+thinkphp5.x的各种版本的漏洞原理及代码分析，请搜索微信公众号"MrHatSec"。
 更多红队技巧，请搜索公众号"信安泥石流"。
