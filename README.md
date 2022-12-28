@@ -34,7 +34,7 @@ check_cve_2020_14882
 ## 环境准备
 ***
 ```
-git clone https://github.com/iceberg-N/thinkphp5.x_Scan.git
+git clone https://github.com/iceberg-N/Weblogic_Scan_GO.git
 ```
 
 ## 使用方法
@@ -42,7 +42,8 @@ git clone https://github.com/iceberg-N/thinkphp5.x_Scan.git
 -h 提供命令帮助文档
 ![WL_Scan_GO-1.png](./images/1.png)
 
-**单个目标**   
+**单个目标**
+
 只有域名，默认为http
 ```
 ./WL_Scan_GO -u http://example.com
